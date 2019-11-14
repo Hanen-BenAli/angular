@@ -1,0 +1,11 @@
+<div (click)="selectCv()" class="row">
+  <div class="col-6">
+    <img src="assets/images/{{person.path | defaultImage}}" class="img-thumbnail"
+         [ngStyle]="{ width: '100px' , height: '100px'}"/>
+  </div>
+  <div class="col-6 my-auto">
+    {{person.name}}  {{person.firstname}}
+  </div>
+
+
+</div>

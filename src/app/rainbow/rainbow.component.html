@@ -1,0 +1,7 @@
+<input appRainbow type="text">
+
+<ol class="list-group" >
+  <li class="list-group-item" *ngFor="let path of paths">
+    <img src="assets/images/{{path | defaultImage : 'rotating_card_thumb.png '}}" [ngStyle]="{ width: '100px', height: '100px' }" >
+  </li>
+</ol>

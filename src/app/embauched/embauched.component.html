@@ -1,0 +1,7 @@
+
+  <h3>List of selected CV</h3>
+  <ol class="list-group" >
+    <li class="list-group-item" *ngFor="let item of recruited">
+      <app-item  [person]="item"></app-item>
+    </li>
+  </ol>

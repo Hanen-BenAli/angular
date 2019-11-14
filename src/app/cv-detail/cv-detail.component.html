@@ -1,0 +1,25 @@
+  <div class="card" >
+
+      <div class="cover">
+        <img src="assets/images/rotating_card_thumb3.png"/>
+      </div>
+      <div class="user">
+        <img class="img-circle" src="assets/images/{{person?.path | defaultImage}}"/>
+      </div>
+      <div class="content" *ngIf="person" >
+        <div class="main">
+          <h3 class="name">{{person.name}} {{person.firstname}}</h3>
+          <p class="profession">{{person.job}}</p>
+
+          <p class="text-center">{{person.age}}</p>
+        </div>
+      </div>
+    <div  class="text-center" *ngIf="!person">
+      <h1>404 NOT FOUND </h1>
+    </div>
+    <div class="footer">
+      <button class="btn btn-secondary" (click)="backToCvs()">Back</button>
+      <button class="btn btn-danger" (click)="deleteCv()">Delete</button>
+    </div>
+
+  </div> <!-- end card -->

@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-6">
+    <input type="color" [(ngModel)]="color" >
+    <input type="number" [(ngModel)]="size" >
+    <select class="form-control" [(ngModel)]="font">
+      <option value="Garamond">Garamond</option>
+      <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times New Roman</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <p [ngStyle]="{
+color: color,
+ fontSize: size+'px',
+fontFamily: font
+}
+
+"> test ngStyle </p>
+  </div>
+</div>
+
+
